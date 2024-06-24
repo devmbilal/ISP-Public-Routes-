@@ -1,0 +1,72 @@
+/* custom.css */
+
+/* Body background and general styling */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif; /* Adjust font as per your preference */
+    color: #333333; /* Text color */
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #343a40; /* Dark background color */
+    border-bottom: 1px solid #dee2e6; /* Border color */
+}
+
+.navbar-brand {
+    color: #ffffff; /* Text color for brand/logo */
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.navbar-brand:hover {
+    color: #f8f9fa; /* Hover color for brand/logo */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* Text color for navigation links */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8f9fa; /* Hover color for navigation links */
+}
+
+/* Upload form */
+.form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #ffffff; /* Background color for form */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Shadow effect */
+}
+
+.form-control {
+    border-color: #ced4da; /* Border color for form inputs */
+    transition: border-color 0.3s; /* Smooth transition for border color change */
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Focus color for form inputs */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Focus shadow effect */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary button background color */
+    border-color: #007bff;
+    color: #ffffff; /* Text color for primary button */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Smooth transition for color change */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Hover background color for primary button */
+    border-color: #0056b3;
+}
+
+/* Map display */
+#map {
+    height: 500px; /* Adjust height as needed */
+    margin-top: 20px;
+}

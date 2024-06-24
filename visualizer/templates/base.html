@@ -1,0 +1,45 @@
+{% load static %} {% load bootstrap4 %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    {% bootstrap_css %}
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/custom.css' %}"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="{% url 'upload_file' %}"
+          >Route Visualizer</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'upload_file' %}">Upload File</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'display_map' %}">Display Map</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-4">{% block content %} {% endblock %}</div>
+    {% bootstrap_javascript %}
+  </body>
+</html>
