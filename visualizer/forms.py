@@ -1,7 +1,7 @@
-from django import forms
-from .models import RouteFile
+# visualizer/forms.py
 
-class RouteFileForm(forms.ModelForm):
-    class Meta:
-        model = RouteFile
-        fields = ['csv_file']
+from django import forms
+from .widgets import CustomFileInput
+
+class RouteFileForm(forms.Form):
+    csv_files = forms.FileField(widget=CustomFileInput(attrs={'multiple': True}))
